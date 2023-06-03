@@ -1,6 +1,6 @@
 # Glucose Chart
 
-The `GlucoseChart` component displays a line chart that visualizes historic glucose data. It allows the user to view and edit glucose data points, add new data points, and delete existing data points.
+The `GlucoseChart` component displays a line chart that visualizes current glucose data. It allows the user to view and edit glucose data points, add new data points, and delete existing data points.
 
 ## API calls
 
