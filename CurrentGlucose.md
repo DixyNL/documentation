@@ -149,9 +149,9 @@ The call :
 - `showGlucoseDataObjects`: Sets the timestamp buttons based on the available glucose data so they can be selected in the selector.
 - `showSpecificGlucoseObjectAndEdit`: Displays and edits a specific glucose data point, finds a timestamp in array and opens form with the values of that timestamp.
 - `fetchPredictionData`: Fetches the predicted glucose data from the server, from the last known data entry point. and makes a new Object to attach to the Array.
+
 ```
 const latestEntry = glucoseData[glucoseData.length - 1];
-
 const newTijdstempel = moment(latestEntry.Tijdstempel, "HH:mm").add(15, "minutes").format("HH:mm");
       const newGlucoseData = {
         Tijdstempel: newTijdstempel,
@@ -163,6 +163,7 @@ const newTijdstempel = moment(latestEntry.Tijdstempel, "HH:mm").add(15, "minutes
       const updatedData = [...glucoseData, newGlucoseData];
       setGlucoseData(updatedData);
 ```
+
 - `labels`: An array of labels representing every minute in a day.
 - `chartOptions`: Options for configuring the chart, including scales and tooltips.
 - `data`: Data object for the chart, including labels and datasets.
