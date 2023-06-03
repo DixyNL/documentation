@@ -134,6 +134,7 @@ The call :
 
 - `getPointBackgroundColor`: Determines the background color of a data point on the chart based on its value or presence of a value in Insuline and Carbs.
 - `replaceScannedGlucWithHistoricGluc`: Replaces the scanned glucose values with historic glucose values in the data, to create consistency between used JSON keys.
+
 ```
   const replaceScannedGlucWithHistoricGluc = (data) => {
     const newData = data.map((obj) => {
@@ -146,12 +147,13 @@ The call :
     setGlucoseData(newData);
   };
 ```
+
 - `showGlucoseDataObjects`: Sets the timestamp buttons based on the available glucose data so they can be selected in the selector.
 - `showSpecificGlucoseObjectAndEdit`: Displays and edits a specific glucose data point, finds a timestamp in array and opens form with the values of that timestamp.
 - `fetchPredictionData`: Fetches the predicted glucose data from the server, from the last known data entry point. and makes a new Object to attach to the Array.
+
 ```
 const latestEntry = glucoseData[glucoseData.length - 1];
-
 const newTijdstempel = moment(latestEntry.Tijdstempel, "HH:mm").add(15, "minutes").format("HH:mm");
       const newGlucoseData = {
         Tijdstempel: newTijdstempel,
