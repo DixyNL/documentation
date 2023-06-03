@@ -51,9 +51,9 @@ The component renders the following:
 - `mealSelector`: Renders the selector and its options for the user to select a meal he/ she wishes to use for calculation
 - `ShowResults`: Shows the results of the preformed calculation this screen contains:
    - `ISF`: insulin sensitivity factor.
-   - `Insulin to take`: insulin sensitivity factor.
-   - `Correction needed`: insulin sensitivity factor.
-   - `Extra insuline to add over 2 hours`: insulin sensitivity factor.
+   - `Insulin to take`: Amount of insuline for carb coverage that is adviced.
+   - `Correction needed`: amount of correnction units that is adviced.
+   - `Extra insuline to add over 2 hours`: Amount of extra insuline units that is adviced.
    - `Disclaimer`: insulin sensitivity factor.
    - `Save`: Option to set teh name for the meal you want to save.
 - `CalculatorForm`: Renders the input form for the user to be able to input all the information the calculation is going to based on. Also renders an explaination div to help the user with inputting the right information.
