@@ -20,6 +20,7 @@ The `Insuline Calculator` component displays a from for the user to input inform
 |-|`Body`: The body contains the meal: name, fat, carbs and protien |  |
 
 ## Calculate API calls
+
 | Route | Values | function |
 |--- |--- |--- |
 | monitor/calculate | `Body`: The body contains the calculation info : taget BG, current BG, Activity, carbs, fat and protien | Preforms calculation based on user input form.
